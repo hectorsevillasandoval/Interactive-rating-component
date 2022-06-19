@@ -1,0 +1,103 @@
+/*
+*   Variables
+*/
+
+@import "partials/reset";
+@import "partials/variables";
+
+body {
+  background-color: $very-dark-blue;
+  font-family: $main-font;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.rounded-circle {
+  background-color: $dark-blue;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: linear-gradient(
+    180deg,
+    hsl(218deg 19% 17%) 0%,
+    hsl(216deg 24% 12%) 100%
+  );
+  border-radius: 20px;
+  padding: 30px;
+  width: 425px;
+  &__title {
+    font-size: 30px;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 10px;
+  }
+  &__description {
+    font-size: 15px;
+    font-weight: 400;
+    color: $light-gray;
+    margin-bottom: 20px;
+  }
+  &__rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+}
+
+.btn {
+    border: 0;
+    font-family: $main-font;
+    line-height: normal;
+  &__rating {
+    @extend .rounded-circle;
+    color: $medium-gray;
+    font-size: 1.1rem;
+    &:hover,
+    &:active {
+      cursor: pointer;
+      color: $white;
+      background-color: $medium-gray;      ;
+    }
+
+    &--active{
+        background-color: $orange;
+        color: $white;
+    }
+  }
+  &__submit{
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    width: 100%;
+    background-color: $orange;
+    color: $white;
+    border: 0;
+    padding: 14px 0 10px;
+    &:hover,
+    &:active {
+      cursor: pointer;
+      background-color: lighten($orange, 10%);
+    }
+  }
+}
+
+.first-view {
+  &__star {
+    @extend .rounded-circle;
+    margin-bottom: 20px;
+  }
+}

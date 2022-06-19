@@ -1,0 +1,137 @@
+/*
+*   Variables
+*/
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+#root, #__next {
+  isolation: isolate;
+}
+
+/*-----------------------------------------------------------------------------------*/
+/*	Variables
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*	Media Queries
+/*-----------------------------------------------------------------------------------*/
+/*-----------------------------------------------------------------------------------*/
+/*	Fonts
+/*-----------------------------------------------------------------------------------*/
+body {
+  background-color: hsl(216deg, 12%, 8%);
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.rounded-circle, .first-view__star, .btn__rating {
+  background-color: hsl(213deg, 19%, 18%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.box {
+  background: linear-gradient(180deg, hsl(218deg, 19%, 17%) 0%, hsl(216deg, 24%, 12%) 100%);
+  border-radius: 20px;
+  padding: 30px;
+  width: 425px;
+}
+.box__title {
+  font-size: 30px;
+  font-weight: 700;
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 10px;
+}
+.box__description {
+  font-size: 15px;
+  font-weight: 400;
+  color: hsl(217deg, 12%, 63%);
+  margin-bottom: 20px;
+}
+.box__rating {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.btn {
+  border: 0;
+  font-family: "Overpass", sans-serif;
+  line-height: normal;
+}
+.btn__rating {
+  color: hsl(216deg, 12%, 54%);
+  font-size: 1.1rem;
+}
+.btn__rating:hover, .btn__rating:active {
+  cursor: pointer;
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(216deg, 12%, 54%);
+}
+.btn__rating--active {
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+}
+.btn__submit {
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  font-weight: 700;
+  width: 100%;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  border: 0;
+  padding: 14px 0 10px;
+}
+.btn__submit:hover, .btn__submit:active {
+  cursor: pointer;
+  background-color: #fc9145;
+}
+
+.first-view__star {
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=main.css.map */
