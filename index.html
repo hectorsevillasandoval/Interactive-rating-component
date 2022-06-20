@@ -31,42 +31,54 @@
           </p>
 
           <!-- Rating -->
-          
+            <div class="box__error">Please pick an option before submit</div>
             <div class="box__rating">
-              <button class="btn btn__rating">1</button>
-              <button class="btn btn__rating">2</button>
-              <button class="btn btn__rating">3</button>
-              <button class="btn btn__rating">4</button>
-              <button class="btn btn__rating">5</button>
+              <button class="btn btn__rating" data-rating="1">1</button>
+              <button class="btn btn__rating" data-rating="2">2</button>
+              <button class="btn btn__rating" data-rating="3">3</button>
+              <button class="btn btn__rating" data-rating="4">4</button>
+              <button class="btn btn__rating" data-rating="5">5</button>
             </div>
             <div class="box__button">
-              <button class="btn btn__submit">Submit</button>
+              <button class="btn btn__submit" disabled>Submit</button>
             </div>
           
           
         </div>
       </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section class="second-view box hide hide-right">
+        <div class="second-view__wrapper">
+          <!-- Star -->
+          <figure class="second-view__illustration"><img src="./images/illustration-thank-you.svg" alt="Thank you image"></figure>
+
+          <div class="box__result">
+            You selected <span class="box__result-score"></span> out of 5
+          </div>
+
+          <!-- Title -->
+          <h2 class="box__title">Thank you!</h2>
+
+          <!-- Description -->
+          <p class="box__description mb-0">
+            We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </section>
+      <!-- Thank you state end -->
     </article>
   </main>
 
   
-  <!-- Rating state end -->
   
-  <!-- Thank you state start -->
   
-  You selected <!-- Add rating here --> out of 5
-  
-  Thank you!
-  
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-  
-  <!-- Thank you state end -->
   
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://www.hectorsevillasandoval.com/" target="_blank">Héctor Sevilla Sandoval</a>.
   </div>
   <script src="src/js/main.js"></script>
 </body>
